@@ -1,2 +1,3 @@
-# cordova-plugin-locale
-Cordova Plugin Locale Utilities
+# Cordova Plugin Locale
+
+Cordova Plugin Locale Utilities.

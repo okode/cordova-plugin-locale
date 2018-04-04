@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-locale" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" version="0.0.1">
+  <name>Locale</name>
+
+  <js-module src="www/locale.js" name="Locale">
+    <clobbers target="navigator.locale" />
+  </js-module>
+
+  <!-- android -->
+  <platform name="android">
+    <source-file src="src/android/Locale.java" target-dir="src/com/okode/cordova/locale" />
+  </platform>
+
+  <!-- ios -->
+  <platform name="ios">
+    <header-file src="src/ios/CDVLocale.h" />
+    <source-file src="src/ios/CDVLocale.m" />
+  </platform>
+</plugin>

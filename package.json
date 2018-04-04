@@ -1,0 +1,23 @@
+{
+  "name": "cordova-plugin-locale",
+  "version": "0.0.1",
+  "description": "Cordova Plugin Locale Utilities",
+  "cordova": {
+    "id": "cordova-plugin-locale",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/okode/cordova-plugin-locale"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Okode",
+  "license": "MIT"
+}
