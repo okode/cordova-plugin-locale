@@ -1,8 +1,8 @@
 var exec = require('cordova/exec');
 
 var locale = {
-    countryCode: function() {
-        exec(null, null, "Locale", "countryCode", []);
+    countryCode: function(success, error) {
+        exec(success, error, "Locale", "countryCode", []);
     }
 };
 
