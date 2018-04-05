@@ -14,8 +14,10 @@ public class Locale extends CordovaPlugin {
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         if ("countryCode".equals(action)) {
             countryCode(callbackContext);
+            return true;
         } else {
             Log.d("Cordova Locale Plugin", "Action not implemeted: " + action + ", Args: " + args);
+            return false;
         }
     }
 
