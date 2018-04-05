@@ -1,6 +1,7 @@
 package com.okode.cordova.locale;
 
-import android.context.Context;
+import android.content.Context;
+import android.util.Log;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
