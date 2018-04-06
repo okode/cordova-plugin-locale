@@ -8,11 +8,21 @@
 
   <!-- android -->
   <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="Locale">
+        <param name="android-package" value="com.okode.cordova.locale.Locale"/>
+      </feature>
+    </config-file>
     <source-file src="src/android/Locale.java" target-dir="src/com/okode/cordova/locale" />
   </platform>
 
   <!-- ios -->
   <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="Locale">
+        <param name="ios-package" value="CDVLocale" />
+      </feature>
+    </config-file>
     <header-file src="src/ios/CDVLocale.h" />
     <source-file src="src/ios/CDVLocale.m" />
   </platform>
