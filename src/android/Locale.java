@@ -12,8 +12,8 @@ public class Locale extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-        if ("countryCode".equals(action)) {
-            countryCode(callbackContext);
+        if ("getCountryCode".equals(action)) {
+            executeGetCountryCode(callbackContext);
             return true;
         } else {
             Log.d("Cordova Locale Plugin", "Action not implemeted: " + action + ", Args: " + args);
@@ -21,7 +21,7 @@ public class Locale extends CordovaPlugin {
         }
     }
 
-    private void countryCode(CallbackContext callbackContext) {
+    private void executeGetCountryCode(CallbackContext callbackContext) {
         Context context = this.cordova.getActivity().getApplicationContext();
         String countryCode = context.getResources().getConfiguration().locale.getCountry();
         callbackContext.success(countryCode);

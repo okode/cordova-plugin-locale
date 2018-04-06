@@ -1,5 +1,5 @@
 interface Navigator {
     locale: {
-        countryCode(): string;
+        getCountryCode(success: (countryCode: string) => void, error: (reason: string) => void): void;
     }
 }
