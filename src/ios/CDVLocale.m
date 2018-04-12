@@ -5,7 +5,7 @@
 - (void)getCountryCode:(CDVInvokedUrlCommand*)command
 {
     NSLocale* currentLocale = [NSLocale currentLocale];
-    NSString* countryCode = [currentLocale countryCode];
+    NSString* countryCode = [currentLocale objectForKey: NSLocaleCountryCode];
     CDVPluginResult* result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:countryCode];
     [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
 }
